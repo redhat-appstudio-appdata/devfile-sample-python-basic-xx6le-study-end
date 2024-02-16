@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: mynewcomponent
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/exd-rcerven-tenant/devfile-sample-python-basic/mynewcomponent@sha256:a7ac9b5553ac00d30a2caebd0ef4f7af972c1332595018d12aecc8920fdeb458
+        name: container-image
+        resources: {}
+status: {}
